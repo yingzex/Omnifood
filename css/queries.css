@@ -121,10 +121,12 @@ instead, 1rem=1em=16px */
 
   .btn-mobile-nav {
     display: block;
+    z-index: 9999;
   }
 
   .main-nav {
-    background-color: #ffffff;
+    background-color: #ffffff90;
+    backdrop-filter: blur(10px); /* bluring everything behind the element */
     position: absolute;
     top: 0;
     left: 0;
@@ -136,7 +138,7 @@ instead, 1rem=1em=16px */
     display: flex;
     align-items: center;
     justify-content: center; 
-    transition: all 2s ease-out;
+    transition: all 0.5s ease-out;
     
     /* hide navigation */
     /* allows no transitions at all */

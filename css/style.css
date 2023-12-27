@@ -105,6 +105,28 @@ greys:
 }
 
 /********************/
+/* Sticky */
+/********************/
+/* sticky is on the body. apply the following to header only when sticky is a parent of it. */
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #ffffffe0;
+  z-index: 999; /* on top of everything except button */
+  box-shadow: 0 1.2rem 3.2rem rgba(0,0,0,0.03);
+}
+
+/* only happen when header has sticky class */
+.sticky .section-hero {
+  margin-top: 9.6rem;
+}
+
+/********************/
 /* Hero section */
 /********************/
 

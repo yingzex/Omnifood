@@ -9,6 +9,9 @@ html{
   /* all elements that overflow the view port horizontally (navbar in mobile mode) will be hidden */
   /* only works if there is nothing absolutely positioned in relation to body */
   overflow-x: hidden;
+
+  /* work on chrome, but not on safari */
+  scroll-behavior: smooth;
 }
 
 body {
