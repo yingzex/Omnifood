@@ -2,7 +2,8 @@
 <html lang="en">
 <head>  
   <meta charset="UTF-8">
-  <meta name="viewport" content="width= , initial-scale=1.0">
+  <!-- always include this line for responsive development -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,6 +12,7 @@
 
   <link rel="stylesheet" href="css/general.css" /> 
   <link rel="stylesheet" href="css/style.css" /> 
+  <link rel="stylesheet" href="css/queries.css" /> 
 </head>
 <body>
   <header class="header">
@@ -27,6 +29,10 @@
           <li><a class="main-nav-link nav-cta" href="#">Try for free</a></li>
         </ul>
     </nav>
+    <button class="btn-mobile-nav">
+      <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+      <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+    </button>
   </header>
 
   <main>
@@ -176,7 +182,7 @@
             </ul>
           </div>
         </div>
-        <div class="list">
+        <div class="diets">
           <h3 class="heading-tertiary">Works with any diet</h3>
           <ul class="list">
             <li class="list-item"><ion-icon class="list-icon" name="checkmark-outline"></ion-icon><span>Vegetarian</span></li>
